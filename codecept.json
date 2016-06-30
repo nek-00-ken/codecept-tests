@@ -1,0 +1,19 @@
+{
+  "tests": "./tests/*.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "SeleniumWebdriver": {
+      "url": "https://my-site-to-test.domain.com",
+      "browser": "firefox",
+      "cssSelectorsEnabled": true
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "config": "./config/preprod.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "codeceptio"
+}
